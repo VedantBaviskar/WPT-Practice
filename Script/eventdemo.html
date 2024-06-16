@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello</title>
+    <script>
+      function go() {
+        alert("youclick button");
+      }
+      function hu(){
+        alert("Hello zatu");
+      }
+    </script>
+  </head>
+  <body >
+    <form >
+      <input type="button" onclick="go()"/>
+      <input type="button"
+      onclick="alert('button == clicked')"/>
+      <input type="button" onload="hu()">
+      <input type="button" onclick="alert('button== lavde')">
+     
+      
+    </form>
+  </body>
+  <script>
+    document.getElementById("btn").onclick=go;
+    document.getElementById("btn").onclick=hu;
+    document.getElementById("btn").addEventListener("click",hu);
+    
+  </script>
+</html>

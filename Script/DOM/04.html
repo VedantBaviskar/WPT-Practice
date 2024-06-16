@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two Text Boxes and a Button</title>
+</head>
+<body>
+    <h2>Enter Values</h2>
+    <input type="text" id="textBox1" placeholder="Enter first value">
+    <input type="text" id="textBox2" placeholder="Enter second value">
+    <button onclick="displayValues()">Submit</button>
+    <p id="result"></p>
+
+    <script>
+        function displayValues() {
+            var value1 = document.getElementById("textBox1").value;
+            var value2 = document.getElementById("textBox2").value;
+            document.getElementById("result").innerText = "Values entered: " + value1 + ", " + value2;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onscroll="hello()">
+    <script>
+        function sum(math,sc,his){
+            var s=math+sc+his;
+            return s;
+        }
+        function perc(tt){
+            var per=tt/300 *100;
+            document.write(per);
+        }
+        var total=sum(10,20,30);
+        document.write(total+"<br>");
+        perc(total);
+
+        function hello(){
+            document.write("Hello everyone");
+        }
+        
+
+    </script>
+    <button onclick="hello()">Click Me</button>
+    
+    
+    <p oncontextmenu="hello()">Click on me</p>
+   
+
+
+</body>
+</html>

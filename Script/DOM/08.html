@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html><head><title>He</title><style>
+#myDIV{
+border:1pxsolidblack;
+margin:5px;
+}
+</style></head><body>
+<div id="myDIV">
+<p>This is a p element in div.</p>
+<p>This is a l soap element in div.</p>
+</div>
+<p>Clickthebuttontoaddabackgroundcolortothefirstpelement (index0) in div.</p>
+<button on click="myFunction()">querySelectorAll</button>
+<script>
+
+function myFunction(){
+var x=document.getElementById("myDIV").querySelectorAll("p");
+x[0].style.backgroundColor="red";
+x[1].style.backgroundColor="red";
+}
+function my(){
+var x=document.getElementById("myDIV").querySelector("p");
+x.style.color="blue";
+
+}
+
+
+</script>
+</body>
+</html>
+
+

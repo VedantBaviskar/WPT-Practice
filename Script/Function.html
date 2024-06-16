@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Function.js">
+        
+    </script>
+</head>
+<body>
+    <script>
+       
+       document.write(call2()+"<br>");
+       
+       
+       document.write(call1());
+    </script>
+   <script>
+    "use strict";
+    function call(a,b)
+    {  var p;
+           p=a*b
+          return p;
+     }
+    var x , y;
+    x=5;
+    y=7;
+    var r=call(x,y,2);
+    document.write(r+"<br>");
+    document.write(call(3,3,6));
+    </script>
+    <script>
+        "use strict";
+        function myFunction(v, w, x, y, z) { }
+        var args = [0, 1];
+        myFunction(-1, ...args, 2)
+        document.write("<br><br>")
+        </script>
+
+    <script>
+        function hp(){
+           document.write("King");
+        }
+        function cp(){
+            document.write("Ace");
+        }
+
+        hp();
+        cp();
+    </script>
+    <script>
+        function bo(fname="Joony" ,lname="Sins"){
+            document.write("Hello "+fname+" "+lname);
+
+        }
+        bo();
+        bo("salman","Khan");
+
+        function sum(a,b){
+            document.write("Sum is"+(a+b));
+        }
+        sum(10,65);
+    </script>
+        
+        
+    
+    
+</body>
+</html>

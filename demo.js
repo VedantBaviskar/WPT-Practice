@@ -1,0 +1,12 @@
+window.alert("Hello");
+document.write("<i><b>Hello bhai<i/><br>");
+var z="Hello g";
+document.write(z+"<br>");
+var p=100.5;
+document.write(p+"<br>");
+let firstname="Vedant";
+//firstname="Baviskar";
+document.write(firstname+"<br>");
+const i=20.5;
+//i=10.5;
+document.write(i+"<br>");

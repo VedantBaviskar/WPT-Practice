@@ -1,0 +1,70 @@
+<!DOCTYPE  html>
+<html><head><title>Feiee...</title><style>
+.mystyle  {
+        width:  500px;
+        height:  50px;
+}
+  .anotherClass  {
+        background-color:  bisque;
+}
+  .myClass  {
+        background-color: aqua;
+        text-align:  center;
+        font-size:  25px;
+        color:  black;
+        margin-bottom:  10px;
+}
+</style></head><body>
+<p>Click  the  button  to  display  the  class  names  of  the  div  element.</p>
+
+<div  id="myDIV"  class="mystyle  myClass pipo">
+       I  am  a  DIV  element  with  multiple  classes
+       </div>
+       <button  onclick="myFunction()">Try  it</button>
+       <p id="demo"></p>  
+       <script>
+       function  myFunction()  {
+       y=document.getElementById("myDIV").classList;
+       alert(y.length);
+                 alert(y[0])  ;
+               document.getElementById("myDIV").classList.add("anotherClass");
+              // document.getElementById("demo").innerHTML  =  y[2];
+              // document.getElementById("myDIV").classList.add("hogaya");
+               //document.getElementById("demo").innerHTML=y[3];
+              // document.getElementById("myDIV").classList.replace("hogaya2");
+              // document.getElementById("demo").innerHTML=y[3];
+              
+
+       }
+       </script>
+       <script>
+        function myFunction(){
+        var x=document.getElementById("myDIV").classList.contains("mystyle");
+        
+        document.getElementById("demo").innerHTML=x;
+        }
+        </script>
+        <script>
+            function myFunction(){
+            var x=document.getElementById("myDIV").classList.toggle("anotherClass");
+            document.getElementById("demo").innerHTML=x;
+            }
+            function myFunctiontoggle(){
+                var x=document.getElementById("myDIV").classList.contains("anotherClass");
+                if(x==true)
+                { document.getElementById("myDIV").classList.remove("anotherClass");
+                X=false;
+                return false;
+                }
+                else 
+                  document.getElementById("myDIV").classList.add("anotherClass")
+                X=true
+                return true
+                document.getElementById("demo").innerHTML=x;
+                }
+                document.getElementById("demo").innerHTML=[3];
+           
+            </script>
+                
+        
+        </body>  </html>

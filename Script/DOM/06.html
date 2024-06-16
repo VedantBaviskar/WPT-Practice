@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <ul class="example">
+      
+      <li class="child">Coffee</li>
+      
+      <li class="child">Tea</li>
+    </ul>
+    <ul class="example">
+      
+      <li class="child">bun</li>
+      
+      <li class="child">ice-cream</li>
+    </ul>
+    <p>
+      Clickthebuttontochangethetextof thefirstlistitem(index0).
+    </p>
+    <button onclick="myFunction()">Tryit</button>
+    <p>
+      <strong>Note:</strong
+      >The get Elements By ClassName()method is not supported in Internet Explorer8andearlierversions.
+    </p>
+    
+    <script>
+      function myFunction() {
+        var list = document.getElementsByClassName("example");
+        alert(list.length);
+        list[0].getElementsByClassName("child")[0].innerHTML = "Milk";
+        list[0].getElementsByClassName("child")[1].innerHTML = "Ukala";
+        list[1].getElementsByClassName("child")[0].innerHTML = "Vedant";
+        list[1].getElementsByClassName("child")[1].innerHTML = "Baviskar";
+
+      }
+    </script>
+    
+  </body>
+</html>
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function go(){
+            let divobj=document.getElementById("dd");
+            alert(divobj);
+            divobj.innerHTML='Hello.....';
+            document.write("Shut up<br>");
+            divobj.outerHTML="Legend.....";
+            confirm(divobj);
+            document.write("Lessss go....");
+
+        }
+    </script>
+</head>
+<body>
+    <div id="dd">Check Here</div>
+    <input type="button" value="clickhere" onclick="go()">
+    <script>
+        document.write("<br>");
+        //go();
+    </script>
+</body>
+</html>

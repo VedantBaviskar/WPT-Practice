@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("Chalo shuru karte hai");
+    </script>
+</head>
+<body>
+    <script>
+        var a=9;
+        var b=5;
+        document.write("<br> ans"+a+b);
+        document.write("<br> ans :" +(a+b)+"<br>");
+        var a=10;
+        var c=a**2;
+        document.write("Square of 10 is :" +c+"<br>");
+        var x=5+7;
+        document.write(x+"<br>");
+        var x="5"+7;
+        document.write(x+"<br>");
+        var x=5-"7";
+        document.write(x+"<br>");
+        var x="5"*"7";
+        document.write(x+"<br>");
+    </script>
+    <script>
+        var x=25;
+        if(x<=25 && x>=12){
+           document.write("Sahi hai"+"<br>"); 
+        }
+        else{
+            document.write("bhag bsdk");
+        }
+        var f=50;
+        if(f*=2){
+            document.write(f+"<br>");
+        }
+        else{
+            document.write("nikal l...de");
+        }
+    </script>
+    <script>
+        const arr=[1 ,2, 3];
+        arr.push(10);
+        document.write(arr+"<br>");
+        for(uf of arr){
+            document.write(uf+",");
+        }
+    </script>
+    <script>
+        'use strict'
+        const my_object={'key':'value'};
+        my_object.key="othervalue";
+        my_object.Name="vita";
+        console.log(my_object);
+    </script>
+    <script>
+        var a=new String("abc");
+        document.write(typeof a);
+        var b=new String("abc");
+        document.write(a==b);
+        document.write(a===b);
+        var x="abc";
+        var y="abc";
+        document.write(x==y);
+        document.write(x===y);
+         document.write(typeof y);
+         document.write(typeof x==typeof y);
+         document.write(a==x);
+         document.write(a===x);
+        
+
+    </script>
+    <script>
+        var x='100';
+        if(x===100){
+          document.write("x is same");
+
+        }
+        else{
+            document.write("X is not same");
+        }
+        var po=100;
+        var z;
+       z=(po==500)? "true" : "false";
+        document.write(z);
+
+        var a=confirm("Do you like our website");
+        if(a){
+            alert("Thnks");
+        }
+        else{
+            alert("sorry");
+        }
+    </script>
+    <script>
+       var d= prompt("What is your age");
+       if(d){
+        alert(d);
+        document.write(d);
+       }
+       else{
+        alert("fraud age");
+       }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+      let datasort = function (a, b) {
+        return a - b;
+      };
+      let values = [50, 60, 10, 5];
+      document.write(values.sort());
+
+      document.write("<hr>");
+      document.write(values.sort(datasort));
+      document.write("<hr>");
+
+      document.write(values.reverse());
+      document.write("<hr>");
+
+      document.write(values.sort((a, b) => a - b));
+      document.write("<hr>");
+
+      let str = ["Jadu", "Hero", "Akshay", "jayssh", "zebra"];
+      document.write(str.sort());
+      document.write("<hr>");
+      let sr=str.slice(4);
+      document.write(sr);
+      document.write("<hr>");
+      var w1=[10,15,20,21,35];
+      document.write(w1);
+      document.write("<hr>");
+      var w2=w1.find(check);
+      document.write(w2);
+      document.write("<hr>");
+
+      function check(age){
+        return age>18;
+      }
+
+
+    </script>
+    <script>
+      const inventory = [
+        { name: "apples", quantity: 2 },
+        { name: "bananas", quantity: 0 },
+        { name: "cherries", quantity: 5 },
+      ];
+      function isCherries(fruit) {
+        return fruit.name === "cherries";
+      }
+      console.log(inventory.find(isCherries));
+      // { name: 'cherries', quantity: 5 }
+    </script>
+    <script>
+      const array1 = [1, 4, 9, 16];
+
+      // pass a function to map
+      const map1 = array1.map((x) => x * 2);
+
+      document.write(map1);
+      // expected output: Array [2, 8, 18, 32]
+    </script>
+    
+  </body>
+</html>

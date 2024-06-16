@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Employee(id,name,salary){
+            alert(this);
+            this.id=id;
+            this.name=name;
+            this.salary=salary;
+        }
+        var obj=new Employee(1,"Vedant",100000);
+        document.write(obj.id+"<br>"+obj.name+"<br>"+obj.salary);
+        document.write("<hr/>")
+
+       
+        console.log(obj);
+        console.log(obj.constructor);
+        for(let pp in obj){
+            document.write(obj[pp]);
+        }
+        document.write("<hr/>")
+        document.write(obj  instanceof Employee);
+
+        var b=obj;
+
+        document.write(b.id);
+        b.id=2;
+        document.write(obj.id);
+        console.log(b);
+        // Define a constructor function
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+
+// // Create an instance of Person
+// let person1 = new Person('Alice', 30);
+
+// // Print the constructor of the instance
+// console.log(person1.constructor);
+
+        
+      
+    </script>
+</body>
+</html>

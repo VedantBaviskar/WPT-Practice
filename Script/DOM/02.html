@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changedata(){
+          let divh=document.getElementById("h");
+          if(divh.textContent==="Hello"){
+            divh.textContent="Bye...";
+          }
+          divh.innerHTML="welcome";
+        }
+        function go(){
+           let divb=document.getElementById("b");
+           divb.innerHTML="See you....";
+        }
+    </script>
+</head>
+<body>
+    <div id="h" onmouseover="changedata()">Hello</div>
+    <div id="b" onclick="go()">bye</div>
+    
+</body>
+</html>
